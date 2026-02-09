@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="B & G Enterprise - Quality, Reliable, Affordable Wooden Furniture Export Partner. Specializing in high-volume nesting tables and coffee tables for Middle East and European distributors.">
+    <title>B & G Enterprise - Quality Wooden Furniture Export Partner | Wholesale Nesting Tables & Coffee Tables</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind config must be inline when using CDN - see js/tailwind-config.js for source -->
+    <script src="js/tailwind-config.js"></script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center">
+                    <img src="images/logos/BG-logo.png" alt="B & G Enterprise" class="logo">
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#process" class="nav-link">Process & Quality</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="btn-primary">Request Quote</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-primary-light" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="#products" class="nav-link">Products</a>
+                    <a href="#process" class="nav-link">Process & Quality</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="btn-primary">Request Quote</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section 1: Above-the-Fold -->
+    <section class="hero-section relative min-h-[90vh] flex items-center overflow-hidden">
+        <!-- Video Background -->
+        <video 
+            src="images/products/hero.webm" 
+            autoplay 
+            loop 
+            muted 
+            playsinline
+            class="hero-video"
+            aria-label="B & G Enterprise factory and product showcase">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Overlay for better text readability -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Content Overlay -->
+        <div class="container mx-auto px-4 py-16 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-display-1 font-display text-white mb-6">
+                    The Global Standard. Crafted and Delivered.
+                </h1>
+                <p class="text-body-lg text-white mb-8">
+                    The dedicated manufacturing partner for wholesalers demanding proven US-standard quality and optimized logistics across the Middle East and Asia.
+                </p>
+                <a href="#contact" class="btn-primary btn-lg">Start Your Direct Partnership</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Trust & Validation Bar -->
+    <section class="bg-white py-12 border-y border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="mb-8">
+                <h3 class="text-center text-sm font-semibold text-gray-600 mb-6 uppercase tracking-wide">Certified & Trusted</h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                    <div class="w-24 h-24 bg-gray-100 rounded flex items-center justify-center border border-gray-200">
+                        <span class="text-xs text-gray-500 text-center px-2">ISO Logo</span>
+                    </div>
+                    <div class="w-24 h-24 bg-gray-100 rounded flex items-center justify-center border border-gray-200">
+                        <span class="text-xs text-gray-500 text-center px-2">FSC Logo</span>
+                    </div>
+                    <div class="w-24 h-24 bg-gray-100 rounded flex items-center justify-center border border-gray-200">
+                        <span class="text-xs text-gray-500 text-center px-2">Certification</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-primary">
+                        Crafted.<br>
+                        For Two Decades.
+                    </h3>
+                </div>
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-primary">
+                        Tested.<br>
+                        By Global Standards.
+                    </h3>
+                </div>
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-primary">
+                        Delivered.<br>
+                        Without Compromise.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Specialized Solution -->
+    <section id="products" class="section section-alt">
+        <div class="container mx-auto px-4">
+            <h2 class="text-display-2 font-heading text-primary text-center mb-4">
+                Solutions. Engineered for Scale.
+            </h2>
+            <p class="text-body-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Products built with container efficiency and retail velocity in mind.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card card-hover">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/products/nesting.webp" alt="Nesting Tables" class="w-full h-full object-cover" style="object-position: center 75%;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-h2 font-heading text-primary mb-3">Nesting Tables</h3>
+                        <p class="text-body text-gray-700">
+                            High retail velocity. Urban market demand. Fast turnover. Optimized shipping density.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card card-hover">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/products/coffeetable-1.webp" alt="Coffee Tables" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-h2 font-heading text-primary mb-3">Coffee Tables</h3>
+                        <p class="text-body text-gray-700">
+                            High-quality centerpieces designed for high-end retail markets. Consistent quality across large production runs.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="card card-hover">
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="images/products/hand-carving.webp" alt="Hand-Carved Furniture" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-h2 font-heading text-primary mb-3">Artistry. Scaled.</h3>
+                        <p class="text-body text-gray-700">
+                            Authentic craftsmanship engineered for mass production. Unique designs that ensure differentiation is standard in your retail offering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Process and Proof -->
+    <section id="process" class="section">
+        <div class="container mx-auto px-4">
+            <h2 class="text-display-2 font-heading text-primary text-center mb-4">
+                The B&G Process. Absolute Confidence.
+            </h2>
+            <p class="text-body-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Precision is the standard. Every component, every process is governed by a zero-tolerance Quality Assurance system, optimized for international delivery.
+            </p>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="aspect-video img-placeholder rounded-lg shadow-xl">
+                    <span>Factory Video Placeholder</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Quality and Readiness -->
+    <section id="about" class="section section-alt">
+        <div class="container mx-auto px-4">
+            <h2 class="text-display-2 font-heading text-primary text-center mb-4">
+                The Direct Advantage. Optimized Supply.
+            </h2>
+            <p class="text-body-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Three reasons smart buyers skip the middleman and work directly with us
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card card-hover p-8 text-center">
+                    <div class="text-4xl mb-4 text-primary-light">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <h3 class="text-h2 font-heading text-primary mb-4">Quality is Inherited.</h3>
+                    <p class="text-body text-gray-700">
+                        We build to the exacting standards of US retail giants. You receive the same uncompromising build integrity, without the licensing markup.
+                    </p>
+                </div>
+                
+                <div class="card card-hover p-8 text-center">
+                    <div class="text-4xl mb-4 text-primary-light">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <h3 class="text-h2 font-heading text-primary mb-4">Logistics. Globalized.</h3>
+                    <p class="text-body text-gray-700">
+                        Proven, reliable container management across complex global routes—from the factory floor to the port of Mumbai, Manila, or Riyadh.
+                    </p>
+                </div>
+                
+                <div class="card card-hover p-8 text-center">
+                    <div class="text-4xl mb-4 text-primary-light">
+                        <i class="bi bi-briefcase-fill"></i>
+                    </div>
+                    <h3 class="text-h2 font-heading text-primary mb-4">Total Supply Control.</h3>
+                    <p class="text-body text-gray-700">
+                        Direct factory access means optimized margins, rapid communication, and guaranteed production scheduling. Control the supply chain, control your market.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Final Conversion -->
+    <section id="contact" class="section">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-display-2 font-heading text-primary mb-4">
+                    Seeking Dedicated, Long-Term Wholesale Partnerships
+                </h2>
+                <p class="text-body-lg text-gray-700 max-w-2xl mx-auto">
+                    Fill out the form below to receive a custom quote and product catalog. Our team will respond within 24 hours.
+                </p>
+            </div>
+            
+            <form class="card p-8 md:p-12" data-form="inquiry" id="inquiry-form">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="form-group">
+                        <label for="company-name" class="form-label">
+                            Company Name <span class="required">*</span>
+                        </label>
+                        <input type="text" id="company-name" name="company-name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="work-email" class="form-label">
+                            Work Email <span class="required">*</span>
+                        </label>
+                        <input type="email" id="work-email" name="work-email" required class="form-input">
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="form-group">
+                        <label for="country" class="form-label">
+                            Country <span class="required">*</span>
+                        </label>
+                        <select id="country" name="country" required class="form-select">
+                            <option value="">Select Country</option>
+                            <option value="UAE">United Arab Emirates</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="DE">Germany</option>
+                            <option value="FR">France</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">
+                            Phone Number <span class="required">*</span>
+                        </label>
+                        <input type="tel" id="phone" name="phone" required class="form-input">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="container-volume" class="form-label">
+                        Estimated Annual Container Volume <span class="required">*</span>
+                    </label>
+                    <select id="container-volume" name="container-volume" required class="form-select">
+                        <option value="">Select Volume</option>
+                        <option value="1-5">1-5 containers per year</option>
+                        <option value="6-10">6-10 containers per year</option>
+                        <option value="11-20">11-20 containers per year</option>
+                        <option value="21-50">21-50 containers per year</option>
+                        <option value="50+">50+ containers per year</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">
+                        Products of Interest <span class="required">*</span>
+                    </label>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" name="products" value="nesting-tables" required class="form-checkbox">
+                            <span class="text-body text-gray-700">Nesting Tables</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="products" value="coffee-tables" required class="form-checkbox">
+                            <span class="text-body text-gray-700">Coffee Tables</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="products" value="hand-carved" required class="form-checkbox">
+                            <span class="text-body text-gray-700">Hand-Carved Designs</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">
+                        Additional Requirements or Questions
+                    </label>
+                    <textarea id="message" name="message" rows="4" class="form-textarea"></textarea>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn-primary btn-lg">
+                        Explore Direct Manufacturing Partnership
+                    </button>
+                    <p class="text-body-sm text-gray-600 mt-4">
+                        By submitting this form, you agree to be contacted by our sales team.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">B & G Enterprise</h3>
+                    <p class="text-sm">Quality furniture export for global B2B markets.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Products</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#products" class="footer-link">Nesting Tables</a></li>
+                        <li><a href="#products" class="footer-link">Coffee Tables</a></li>
+                        <li><a href="#products" class="footer-link">Hand-Carved</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#about" class="footer-link">About Us</a></li>
+                        <li><a href="#process" class="footer-link">Process & Quality</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Email: info@bngenterprise.com</li>
+                        <li>Phone: +60 XXXX XXXX</li>
+                        <li>Malaysia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2024 B & G Enterprise Sdn Bhd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+</body>
+</html>
