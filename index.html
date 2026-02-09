@@ -1,381 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="B & G Enterprise - Quality, Reliable, Affordable Wooden Furniture Export Partner. Specializing in high-volume nesting tables and coffee tables for Middle East and European distributors.">
-    <title>B & G Enterprise - Quality Wooden Furniture Export Partner | Wholesale Nesting Tables & Coffee Tables</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Tailwind config must be inline when using CDN - see js/tailwind-config.js for source -->
-    <script src="js/tailwind-config.js"></script>
+    <title>B & G Enterprise | Trusted Furniture Manufacturing Since 1999</title>
+    <meta name="description"
+        content="Specialized nesting tables and coffee table manufacturing in Muar, Malaysia. Exporting quality furniture to the Middle East for 25 years.">
+    <link rel="stylesheet" href="landing.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-white text-gray-800">
-    <!-- Navigation -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <a href="index.html" class="flex items-center">
-                    <img src="images/logos/BG-logo.png" alt="B & G Enterprise" class="logo">
-                </a>
-                
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link active">Home</a>
-                    <a href="#products" class="nav-link">Products</a>
-                    <a href="#process" class="nav-link">Process & Quality</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#contact" class="btn-primary">Request Quote</a>
-                </div>
-                
-                <button id="mobile-menu-btn" class="md:hidden text-primary-light" aria-label="Toggle menu">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="images/logos/BG-logo.png" alt="B & G Enterprise">
             </div>
-            
-            <div id="mobile-menu" class="mobile-menu md:hidden mt-4 pb-4">
-                <div class="flex flex-col space-y-4">
-                    <a href="index.html" class="nav-link active">Home</a>
-                    <a href="#products" class="nav-link">Products</a>
-                    <a href="#process" class="nav-link">Process & Quality</a>
-                    <a href="#about" class="nav-link">About</a>
-                    <a href="#contact" class="btn-primary">Request Quote</a>
-                </div>
-            </div>
-        </nav>
+            <a href="https://api.whatsapp.com/send?phone=60123107525&text=Hello%20B%20%26%20G%20Team%2C%20I'm%20interested%20in%20your%20furniture%20collections.%20Can%20you%20share%20more%20details%3F"
+                class="btn btn-outline">WhatsApp Us</a>
+        </div>
     </header>
 
-    <!-- Section 1: Above-the-Fold -->
-    <section class="hero-section relative min-h-[90vh] flex items-center overflow-hidden">
-        <!-- Video Background -->
-        <video 
-            src="images/products/hero.webm" 
-            autoplay 
-            loop 
-            muted 
-            playsinline
-            class="hero-video"
-            aria-label="B & G Enterprise factory and product showcase">
-            Your browser does not support the video tag.
-        </video>
-        
-        <!-- Overlay for better text readability -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline poster="images/products/banner1.jpeg">
+                <source src="images/products/hero.webm" type="video/webm">
+            </video>
+        </div>
         <div class="hero-overlay"></div>
-        
-        <!-- Content Overlay -->
-        <div class="container mx-auto px-4 py-16 relative z-10">
-            <div class="max-w-3xl">
-                <h1 class="text-display-1 font-display text-white mb-6">
-                    The Global Standard. Crafted and Delivered.
-                </h1>
-                <p class="text-body-lg text-white mb-8">
-                    The dedicated manufacturing partner for wholesalers demanding proven US-standard quality and optimized logistics across the Middle East and Asia.
-                </p>
-                <a href="#contact" class="btn-primary btn-lg">Start Your Direct Partnership</a>
+        <div class="container hero-content">
+            <h1>Real Wood Tables. <br><span class="text-gold">Trusted Since 1999.</span></h1>
+            <p>Your shop needs furniture that is strong and looks good. For 25 years, we have made tables that the
+                Middle East loves. Honest work, made in Malaysia.</p>
+            <div class="hero-btns">
+                <a href="#vault" class="btn btn-primary">See Private Catalog</a>
             </div>
         </div>
     </section>
 
-    <!-- Section 2: Trust & Validation Bar -->
-    <section class="bg-white py-12 border-y border-gray-200">
-        <div class="container mx-auto px-4">
-            <div class="mb-8">
-                <h3 class="text-center text-sm font-semibold text-gray-600 mb-6 uppercase tracking-wide">Certified & Trusted</h3>
-                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                    <div class="w-24 h-24 bg-gray-100 rounded flex items-center justify-center border border-gray-200">
-                        <span class="text-xs text-gray-500 text-center px-2">ISO Logo</span>
-                    </div>
-                    <div class="w-24 h-24 bg-gray-100 rounded flex items-center justify-center border border-gray-200">
-                        <span class="text-xs text-gray-500 text-center px-2">FSC Logo</span>
-                    </div>
-                    <div class="w-24 h-24 bg-gray-100 rounded flex items-center justify-center border border-gray-200">
-                        <span class="text-xs text-gray-500 text-center px-2">Certification</span>
-                    </div>
-                </div>
+    <!-- Trust Bar -->
+    <section class="trust-bar reveal">
+        <div class="container trust-grid">
+            <div class="trust-item reveal delay-1">
+                <i data-lucide="calendar" style="margin-bottom: 0.5rem; color: var(--brand-gold);"></i>
+                <h3>1999</h3>
+                <p>Started in Muar, Malaysia</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-primary">
-                        Crafted.<br>
-                        For Two Decades.
-                    </h3>
-                </div>
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-primary">
-                        Tested.<br>
-                        By Global Standards.
-                    </h3>
-                </div>
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold text-primary">
-                        Delivered.<br>
-                        Without Compromise.
-                    </h3>
-                </div>
+            <div class="trust-item reveal delay-2">
+                <i data-lucide="award" style="margin-bottom: 0.5rem; color: var(--brand-gold);"></i>
+                <h3>25+</h3>
+                <p>Years of Craft</p>
+            </div>
+            <div class="trust-item reveal delay-3">
+                <i data-lucide="shield-check" style="margin-bottom: 0.5rem; color: var(--brand-gold);"></i>
+                <h3>Trusted</h3>
+                <p>By Partners for Decades</p>
             </div>
         </div>
     </section>
 
-    <!-- Section 3: Specialized Solution -->
-    <section id="products" class="section section-alt">
-        <div class="container mx-auto px-4">
-            <h2 class="text-display-2 font-heading text-primary text-center mb-4">
-                Solutions. Engineered for Scale.
-            </h2>
-            <p class="text-body-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                Products built with container efficiency and retail velocity in mind.
-            </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card card-hover">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="images/products/nesting.webp" alt="Nesting Tables" class="w-full h-full object-cover" style="object-position: center 75%;">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-h2 font-heading text-primary mb-3">Nesting Tables</h3>
-                        <p class="text-body text-gray-700">
-                            High retail velocity. Urban market demand. Fast turnover. Optimized shipping density.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="card card-hover">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="images/products/coffeetable-1.webp" alt="Coffee Tables" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-h2 font-heading text-primary mb-3">Coffee Tables</h3>
-                        <p class="text-body text-gray-700">
-                            High-quality centerpieces designed for high-end retail markets. Consistent quality across large production runs.
-                        </p>
+    <!-- Factory Section -->
+    <section id="factory" class="section-padding reveal">
+        <div class="container">
+            <div class="grid-2">
+                <div class="copy-block reveal delay-1">
+                    <h3>Professional Manufacturing. <br>Every Day.</h3>
+                    <p>Since 1999, we have focused on making one thing perfect: Your furniture. In our Muar factory, we
+                        check every joint by hand to make sure it is strong and beautiful for your shop.</p>
+                    <div class="premium-features">
+                        <div class="p-feature reveal delay-1">
+                            <i data-lucide="verified" class="p-icon"></i>
+                            <strong>Hand-checked for quality</strong>
+                        </div>
+                        <div class="p-feature reveal delay-2">
+                            <i data-lucide="tree-pine" class="p-icon"></i>
+                            <strong>Real timber construction</strong>
+                        </div>
+                        <div class="p-feature reveal delay-3">
+                            <i data-lucide="factory" class="p-icon"></i>
+                            <strong>Direct factory supply</strong>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="card card-hover">
-                    <div class="aspect-[4/3] overflow-hidden">
-                        <img src="images/products/hand-carving.webp" alt="Hand-Carved Furniture" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-h2 font-heading text-primary mb-3">Artistry. Scaled.</h3>
-                        <p class="text-body text-gray-700">
-                            Authentic craftsmanship engineered for mass production. Unique designs that ensure differentiation is standard in your retail offering.
-                        </p>
-                    </div>
+                <div class="reveal delay-2">
+                    <img src="images/products/furniture-07.png" alt="Finished Quality" class="feature-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 4: Process and Proof -->
-    <section id="process" class="section">
-        <div class="container mx-auto px-4">
-            <h2 class="text-display-2 font-heading text-primary text-center mb-4">
-                The B&G Process. Absolute Confidence.
-            </h2>
-            <p class="text-body-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                Precision is the standard. Every component, every process is governed by a zero-tolerance Quality Assurance system, optimized for international delivery.
-            </p>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="aspect-video img-placeholder rounded-lg shadow-xl">
-                    <span>Factory Video Placeholder</span>
+    <!-- Export Section (The Proof) -->
+    <section class="section-padding export-section reveal">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Trusted for Export</h2>
+                <p>Every month, we load containers for our partners. We know how to prepare furniture for the long
+                    journey to your country.</p>
+            </div>
+            <br>
+            <div class="export-grid">
+                <div class="export-item reveal delay-1">
+                    <img src="images/containers/container1.png" alt="Container Loading Photo 1">
+                </div>
+                <div class="export-item reveal delay-2">
+                    <img src="images/containers/container2.png" alt="Container Loading Photo 2">
+                </div>
+                <div class="export-item reveal delay-3">
+                    <img src="images/containers/container3.png" alt="Container Loading Photo 3">
+                </div>
+                <div class="export-item reveal delay-4">
+                    <img src="images/containers/container4.png" alt="Container Loading Photo 4">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 5: Quality and Readiness -->
-    <section id="about" class="section section-alt">
-        <div class="container mx-auto px-4">
-            <h2 class="text-display-2 font-heading text-primary text-center mb-4">
-                The Direct Advantage. Optimized Supply.
-            </h2>
-            <p class="text-body-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-                Three reasons smart buyers skip the middleman and work directly with us
-            </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card card-hover p-8 text-center">
-                    <div class="text-4xl mb-4 text-primary-light">
-                        <i class="bi bi-check-circle-fill"></i>
-                    </div>
-                    <h3 class="text-h2 font-heading text-primary mb-4">Quality is Inherited.</h3>
-                    <p class="text-body text-gray-700">
-                        We build to the exacting standards of US retail giants. You receive the same uncompromising build integrity, without the licensing markup.
+    <!-- Specialization Section -->
+    <section class="section-padding reveal">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Tables that People Love</h2>
+                <p>Nesting tables and coffee tables are what we do best. By choosing a specialist, you get the detail
+                    that others miss.</p>
+            </div>
+            <div class="spec-grid">
+                <div class="spec-card reveal delay-1">
+                    <img src="images/products/nesting.webp" alt="Nesting Table" class="feature-img"
+                        style="margin-bottom: 1.5rem; aspect-ratio: 1/1;">
+                    <h3>Nesting Tables</h3>
+                    <p>Perfect-fit sets that save space and look beautiful. Made with care for your customers.</p>
+                </div>
+                <div class="spec-card reveal delay-2">
+                    <img src="images/products/hand-carving.webp" alt="Craftsmanship Detail" class="feature-img"
+                        style="margin-bottom: 1.5rem; aspect-ratio: 1/1;">
+                    <h3>Custom Table Legs</h3>
+                    <p>Our special legs are unique and very strong. They make your shop look special and help you sell
+                        more.</p>
+                </div>
+                <div class="spec-card reveal delay-3">
+                    <img src="images/products/coffeetable-1.webp" alt="Solid Coffee Table" class="feature-img"
+                        style="margin-bottom: 1.5rem; aspect-ratio: 1/1;">
+                    <h3>Quality Finish</h3>
+                    <p>Real wood finishes that last a long time and stay beautiful in the Middle East climate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vault Section -->
+    <section id="vault" class="section-padding vault reveal">
+        <div class="container reveal">
+            <div class="vault-card reveal delay-1">
+                <span class="reveal-icon"><i data-lucide="shield-check"
+                        style="width: 48px; height: 48px; margin: 0 auto; color: var(--brand-gold);"></i></span>
+                <h2>Protecting Your Business</h2>
+                <p>We want your shop to be special. That is why we do not show all our new designs online. <br>Please
+                    contact us privately to see the full Collection.</p>
+                <br>
+                <a href="https://api.whatsapp.com/send?phone=60123107525&text=Hello%20B%20%26%20G%20Team%2C%20I'm%20interested%20in%20your%20private%20collection%20and%20full%20catalog.%20Can%20you%20assist%20me%3F"
+                    class="btn btn-primary">Get Catalog on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding contact-section">
+        <div class="container contact-flex">
+            <div class="contact-info reveal delay-1">
+                <h3>Talk to Us Today</h3>
+                <p>Start a partnership built on 25 years of trust. Tell us what your shop needs.</p>
+                <div style="margin-top: 2rem;">
+                    <p><strong>B & G Enterprise Sdn Bhd</strong><br>
+                        <small style="color: var(--text-muted);">CO.NO.: 199901020631 (495531-T)</small>
                     </p>
-                </div>
-                
-                <div class="card card-hover p-8 text-center">
-                    <div class="text-4xl mb-4 text-primary-light">
-                        <i class="bi bi-globe"></i>
-                    </div>
-                    <h3 class="text-h2 font-heading text-primary mb-4">Logistics. Globalized.</h3>
-                    <p class="text-body text-gray-700">
-                        Proven, reliable container management across complex global routes—from the factory floor to the port of Mumbai, Manila, or Riyadh.
+                    <p style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="phone" style="width: 18px; height: 18px; color: var(--brand-gold);"></i>
+                        06-9519 333
                     </p>
-                </div>
-                
-                <div class="card card-hover p-8 text-center">
-                    <div class="text-4xl mb-4 text-primary-light">
-                        <i class="bi bi-briefcase-fill"></i>
-                    </div>
-                    <h3 class="text-h2 font-heading text-primary mb-4">Total Supply Control.</h3>
-                    <p class="text-body text-gray-700">
-                        Direct factory access means optimized margins, rapid communication, and guaranteed production scheduling. Control the supply chain, control your market.
+                    <p style="margin-top: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="mail" style="width: 18px; height: 18px; color: var(--brand-gold);"></i>
+                        bngesb@hotmail.com
+                    </p>
+                    <p style="margin-top: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-lucide="map-pin" style="width: 18px; height: 18px; color: var(--brand-gold);"></i>
+                        Muar, Johor, Malaysia
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
+            <form id="contactForm" action="https://formsubmit.co/ajax/bng.marketing1@outlook.com" method="POST">
+                <!-- FormSubmit Configuration -->
+                <!-- <input type="hidden" name="_cc" value="bngesb@hotmail.com"> -->
+                <input type="hidden" name="_subject" value="New B2B Inquiry - B & G Enterprise">
+                <input type="hidden" name="_template" value="table">
 
-    <!-- Section 6: Final Conversion -->
-    <section id="contact" class="section">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="text-center mb-12">
-                <h2 class="text-display-2 font-heading text-primary mb-4">
-                    Seeking Dedicated, Long-Term Wholesale Partnerships
-                </h2>
-                <p class="text-body-lg text-gray-700 max-w-2xl mx-auto">
-                    Fill out the form below to receive a custom quote and product catalog. Our team will respond within 24 hours.
-                </p>
-            </div>
-            
-            <form class="card p-8 md:p-12" data-form="inquiry" id="inquiry-form">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div class="form-group">
-                        <label for="company-name" class="form-label">
-                            Company Name <span class="required">*</span>
-                        </label>
-                        <input type="text" id="company-name" name="company-name" required class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="work-email" class="form-label">
-                            Work Email <span class="required">*</span>
-                        </label>
-                        <input type="email" id="work-email" name="work-email" required class="form-input">
-                    </div>
+                <div class="form-group reveal delay-1">
+                    <label>Your Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
                 </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    <div class="form-group">
-                        <label for="country" class="form-label">
-                            Country <span class="required">*</span>
-                        </label>
-                        <select id="country" name="country" required class="form-select">
-                            <option value="">Select Country</option>
-                            <option value="UAE">United Arab Emirates</option>
-                            <option value="SA">Saudi Arabia</option>
-                            <option value="UK">United Kingdom</option>
-                            <option value="DE">Germany</option>
-                            <option value="FR">France</option>
-                            <option value="ZA">South Africa</option>
-                            <option value="NG">Nigeria</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone" class="form-label">
-                            Phone Number <span class="required">*</span>
-                        </label>
-                        <input type="tel" id="phone" name="phone" required class="form-input">
-                    </div>
+                <div class="form-group reveal delay-2">
+                    <label>Your Company</label>
+                    <input type="text" name="company" id="company" placeholder="Enter your company name" required>
                 </div>
-                
-                <div class="form-group">
-                    <label for="container-volume" class="form-label">
-                        Estimated Annual Container Volume <span class="required">*</span>
-                    </label>
-                    <select id="container-volume" name="container-volume" required class="form-select">
-                        <option value="">Select Volume</option>
-                        <option value="1-5">1-5 containers per year</option>
-                        <option value="6-10">6-10 containers per year</option>
-                        <option value="11-20">11-20 containers per year</option>
-                        <option value="21-50">21-50 containers per year</option>
-                        <option value="50+">50+ containers per year</option>
+                <div class="form-group reveal delay-3">
+                    <label>Your Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="form-group reveal delay-4">
+                    <label>Your Country</label>
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option>Saudi Arabia</option>
+                        <option>UAE</option>
+                        <option>Iraq</option>
+                        <option>Iran</option>
+                        <option>Qatar</option>
+                        <option>Kuwait</option>
+                        <option>Oman</option>
+                        <option>Bahrain</option>
+                        <option>Jordan</option>
+                        <option>Lebanon</option>
+                        <option>Egypt</option>
+                        <option>Turkey</option>
+                        <option>Other</option>
                     </select>
                 </div>
-                
-                <div class="form-group">
-                    <label class="form-label">
-                        Products of Interest <span class="required">*</span>
-                    </label>
-                    <div class="space-y-2">
-                        <label class="flex items-center">
-                            <input type="checkbox" name="products" value="nesting-tables" required class="form-checkbox">
-                            <span class="text-body text-gray-700">Nesting Tables</span>
-                        </label>
-                        <label class="flex items-center">
-                            <input type="checkbox" name="products" value="coffee-tables" required class="form-checkbox">
-                            <span class="text-body text-gray-700">Coffee Tables</span>
-                        </label>
-                        <label class="flex items-center">
-                            <input type="checkbox" name="products" value="hand-carved" required class="form-checkbox">
-                            <span class="text-body text-gray-700">Hand-Carved Designs</span>
-                        </label>
-                    </div>
+                <div class="form-group reveal delay-1">
+                    <label>Your Message</label>
+                    <textarea name="message" id="message" rows="4" placeholder="How can we help you?"
+                        required></textarea>
                 </div>
-                
-                <div class="form-group">
-                    <label for="message" class="form-label">
-                        Additional Requirements or Questions
-                    </label>
-                    <textarea id="message" name="message" rows="4" class="form-textarea"></textarea>
-                </div>
-                
-                <div class="text-center">
-                    <button type="submit" class="btn-primary btn-lg">
-                        Explore Direct Manufacturing Partnership
-                    </button>
-                    <p class="text-body-sm text-gray-600 mt-4">
-                        By submitting this form, you agree to be contacted by our sales team.
-                    </p>
-                </div>
+                <button type="submit" class="btn btn-primary reveal delay-2" style="width: 100%;">Send Inquiry</button>
             </form>
         </div>
     </section>
 
+    <!-- WhatsApp Float -->
+    <a href="https://api.whatsapp.com/send?phone=60123107525&text=Hello%20B%20%26%20G%20Team%2C%20I'm%20interested%20in%20your%20furniture%20collections.%20Can%20you%20share%20more%20details%3F"
+        class="whatsapp-float" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"
+            style="color: white;">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-bold text-white mb-4">B & G Enterprise</h3>
-                    <p class="text-sm">Quality furniture export for global B2B markets.</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Products</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#products" class="footer-link">Nesting Tables</a></li>
-                        <li><a href="#products" class="footer-link">Coffee Tables</a></li>
-                        <li><a href="#products" class="footer-link">Hand-Carved</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#about" class="footer-link">About Us</a></li>
-                        <li><a href="#process" class="footer-link">Process & Quality</a></li>
-                        <li><a href="#contact" class="footer-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li>Email: info@bngenterprise.com</li>
-                        <li>Phone: +60 XXXX XXXX</li>
-                        <li>Malaysia</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>&copy; 2024 B & G Enterprise Sdn Bhd. All rights reserved.</p>
-            </div>
+    <footer style="padding: 3rem 0; text-align: center; font-size: 0.9rem; color: #64748b;">
+        <div class="container">
+            &copy; 2026 B & G Enterprise Sdn Bhd. All Rights Reserved.
         </div>
     </footer>
 
-    <script src="js/common.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Reveal Observer
+        const revealCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal-active');
+                }
+            });
+        };
+
+        const revealObserver = new IntersectionObserver(revealCallback, {
+            threshold: 0.15
+        });
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Form Logic
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const company = document.getElementById('company').value;
+            const country = document.getElementById('country').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const submitBtn = this.querySelector('button');
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Sending...';
+
+            // 1. WhatsApp Pre-fill URL
+            const whatsappText = `Hello B & G Team, I am ${name} from ${company} in ${country}. \n\nInquiry: ${message}\n\nEmail: ${email}`;
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=60123107525&text=` + encodeURIComponent(whatsappText);
+
+            // 2. Submit to FormSubmit (AJAX)
+            fetch('https://formsubmit.co/ajax/bng.marketing1@outlook.com', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    "Name": name,
+                    "Company": company,
+                    "Email": email,
+                    "Country": country,
+                    "Message": message,
+                    // "_cc": "bngesb@hotmail.com",
+                    "_subject": "New B2B Inquiry - B & G Enterprise"
+                })
+            })
+                .then(response => {
+                    // Regardless of email success, we open WhatsApp to ensure lead is started
+                    window.open(whatsappUrl, '_blank');
+
+                    // Success UI
+                    contactForm.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; background: rgba(0, 119, 163, 0.05); border-radius: var(--radius);">
+                        <i data-lucide="check-circle" style="width: 48px; height: 48px; color: #10b981; margin-bottom: 1rem;"></i>
+                        <h3>Inquiry Sent Successfully</h3>
+                        <p>We've received your email. WhatsApp has been opened for instant communication.</p>
+                    </div>
+                `;
+                    lucide.createIcons();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    window.open(whatsappUrl, '_blank');
+                });
+        });
+    </script>
 </body>
+
 </html>
