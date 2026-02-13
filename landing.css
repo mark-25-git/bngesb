@@ -25,7 +25,7 @@
     --spacing-lg: 3rem;
     --spacing-xl: 6rem;
 
-    --radius: 4px;
+    --radius: 24px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -244,13 +244,30 @@ header {
 }
 
 /* Feature Image Placeholders */
+.bento-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: #000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.bento-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover img {
+    transform: scale(1.02);
+}
+
 .feature-img {
     width: 100%;
     aspect-ratio: 4/3;
-    background-color: var(--bg-deep);
-    border-radius: var(--radius);
     object-fit: cover;
-    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .copy-block h3 {
@@ -265,33 +282,63 @@ header {
 
 .premium-features {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .p-feature {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: var(--radius);
+    /* Apple-style large radius */
+    background: #000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.p-feature img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.p-feature:hover img {
+    transform: scale(1.02);
+}
+
+.p-feature-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    /* Generous breathing room */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
     display: flex;
-    gap: 1rem;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.p-icon {
-    width: 24px;
-    height: 24px;
-    color: var(--brand-gold);
-    flex-shrink: 0;
+.p-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
 }
 
-.p-feature strong {
-    display: block;
-    font-size: 1.1rem;
-    color: var(--text-main);
-}
-
-.p-feature p {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    margin-bottom: 0 !important;
+.p-title {
+    color: white;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
 }
 
 /* Export / Container Gallery */
@@ -317,13 +364,18 @@ header {
     border-radius: var(--radius);
     overflow: hidden;
     background-color: var(--bg-surface);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .export-item img {
     display: block;
     width: 100%;
     height: auto;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.export-item:hover img {
+    transform: scale(1.02);
 }
 
 /* Specialization Cards */
@@ -337,12 +389,18 @@ header {
     background: var(--bg-surface);
     padding: 2.5rem;
     border-radius: var(--radius);
-    border-top: 4px solid transparent;
     transition: var(--transition);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.spec-card:hover {
-    border-top-color: var(--brand-gold);
+.spec-card .feature-img {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.spec-card:hover .feature-img {
+    transform: scale(1.02);
 }
 
 .spec-card h3 {
@@ -372,7 +430,7 @@ header {
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 3rem 2rem;
-    border-radius: 20px;
+    border-radius: var(--radius);
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -482,7 +540,8 @@ textarea:focus {
 @media (max-width: 768px) {
 
     .grid-2,
-    .contact-flex {
+    .contact-flex,
+    .premium-features {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
